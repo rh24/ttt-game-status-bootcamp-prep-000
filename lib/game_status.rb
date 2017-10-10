@@ -53,7 +53,6 @@ def winner(board)
         return "O"
       end
     end
-  end
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS =[
