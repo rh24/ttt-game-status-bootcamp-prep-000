@@ -26,9 +26,9 @@ end
 
 def draw?(board)
   WIN_COMBINATIONS.each do |win|
-    if win.all?{|i| board[i] == "X"}
+    if win.none?{|i| board[i] == "X"}
       return true
-    elsif win.all?{|i| board[i] == "Y"}
+    elsif win.none?{|i| board[i] == "Y"}
       return true
     end
   end
