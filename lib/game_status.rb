@@ -42,8 +42,6 @@ def over?(board)
     return true
   elsif !full?(board)
     return false 
-  else
-    true
   end
 end
 # Define your WIN_COMBINATIONS constant
