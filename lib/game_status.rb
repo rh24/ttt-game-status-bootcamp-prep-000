@@ -46,7 +46,6 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == true
     WIN_COMBINATIONS.each do |win|
       if win.all?{|i| board[i] == "X"}
         return "X"
