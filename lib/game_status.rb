@@ -55,7 +55,7 @@ def winner(board)
       end
     end
   end
-    return nil
+  return nil
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS =[
