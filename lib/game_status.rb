@@ -25,7 +25,14 @@ def full?(board)
 end
 
 def draw?(board)
-
+  WIN_COMBINATIONS.each do |win|
+    if win.all?{|i| board[i] == "X"}
+      return true
+    elsif win.all?{|i| board[i] == "Y"}
+      return true
+    end
+  end
+  return false
 end
 
 # Define your WIN_COMBINATIONS constant
