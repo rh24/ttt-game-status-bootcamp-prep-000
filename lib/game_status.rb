@@ -46,6 +46,7 @@ def over?(board)
 end
 
 def winner(board)
+  if won?(board)
     WIN_COMBINATIONS.each do |win|
       if win.all?{|i| board[i] == "X"}
         return "X"
@@ -53,6 +54,7 @@ def winner(board)
         return "O"
       end
     end
+  end
     return nil
 end
 # Define your WIN_COMBINATIONS constant
