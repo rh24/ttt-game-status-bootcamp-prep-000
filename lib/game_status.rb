@@ -40,8 +40,6 @@ def over?(board)
     return true
   elsif draw?(board)
     return true
-  elsif full?(board)
-    return true
   elsif !full?(board)
     false
   end
