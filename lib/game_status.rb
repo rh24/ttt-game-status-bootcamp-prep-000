@@ -28,7 +28,7 @@ def draw?(board)
   WIN_COMBINATIONS.each do |win|
     if win.all?{|i| board[i] == "X"}
       return false
-    elsif win.all?{|i| board[i] == "Y"}
+    elsif win.all?{|i| board[i] == "O"}
       return false
     end
   end
@@ -46,8 +46,12 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    return board[i]
+  if won?(board) == true
+    WIN_COMBINATIONS.each do |win|
+      if win.all?{|i| board[i] == "X"}
+        return "X"
+      elsif win.all?{|i| board[i] == "O"}
+        return "O"
   end
 end
 # Define your WIN_COMBINATIONS constant
