@@ -45,7 +45,7 @@ def over?(board)
   else
     false
   end
-  false
+return  false
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS =[
