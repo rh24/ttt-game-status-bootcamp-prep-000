@@ -39,7 +39,8 @@ def over?(board)
   if full?(board)
     return true
   else
-  false
+    return false
+  end
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS =[
