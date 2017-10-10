@@ -52,7 +52,6 @@ def winner(board)
       elsif win.all?{|i| board[i] == "O"}
         return "O"
       end
-      return false
     end
 end
 # Define your WIN_COMBINATIONS constant
