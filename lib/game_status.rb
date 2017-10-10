@@ -26,13 +26,13 @@ end
 
 def draw?(board)
   WIN_COMBINATIONS.each do |win|
-    if win.none?{|i| board[i] == "X"}
-      return true
-    elsif win.none?{|i| board[i] == "Y"}
-      return true
+    if win.all?{|i| board[i] == "X"}
+      return false
+    elsif win.all?{|i| board[i] == "Y"}
+      return false
     end
   end
-  return false
+  return true
 end
 
 # Define your WIN_COMBINATIONS constant
